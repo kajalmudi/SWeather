@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <title>SWeather - Weather on the Go!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" width="30" height="30" alt="" />
+    </a>
+    <a class="navbar-brand" href="#">SWeather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://openweathermap.org/" target="_blank">Weather API Link</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" id="search">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search for a city" aria-label="Search"
+          id="textInput" autocomplete="off" />
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </nav>
+  <div class="container my-4 mt-5">
+    <div class="row" id="container">
+      <div class="col-xs-12 col-lg-6 order-2 order-lg-1 p-5">
+        <h1 class="mt-5">
+          <span id="heading">SWeather</span> - Get the Most Accurate Weather
+          <span id="heading">Now!</span>
+        </h1>
+        <button id="getInfo" class="btn btn-outline-danger mt-5">
+          Get current weather
+        </button>
+        <div class="container text-muted mt-5 mb-4 pl-0">
+          &#169 Developed by Sayandeep Adhikary
+        </div>
+        <div class="container pl-0 icons">
+          <a href="https://www.linkedin.com/in/sayandeep-adhikary-029564220/" class="mx-2" target="_blank"><i
+              class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/sayandeep-adhikary" class="mx-2" target="_blank"><i
+              class="fa-brands fa-github fa-2x"></i></a>
+          <a href="https://www.instagram.com/sayandeep.adhikary/" class="mx-2" target="_blank"><i
+              class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100073317752458" class="mx-2" target="_blank"><i
+              class="fa-brands fa-facebook fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-6 order-1 d-flex align-items-center justify-content-center" id="image">
+        <img src="carousel.jpg" alt="winter image" />
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
